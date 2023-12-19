@@ -1,0 +1,14 @@
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/bin/Debug/net8.0/InventoryManagement.DAL.deps.json
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/bin/Debug/net8.0/InventoryManagement.DAL.dll
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/bin/Debug/net8.0/InventoryManagement.DAL.pdb
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.csproj.AssemblyReference.cache
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.AssemblyInfoInputs.cache
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.AssemblyInfo.cs
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.csproj.CoreCompileInputs.cache
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.dll
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/refint/InventoryManagement.DAL.dll
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.pdb
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/ref/InventoryManagement.DAL.dll
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/bin/Debug/net8.0/InventoryManagement.DAL.runtimeconfig.json
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.DAL/obj/Debug/net8.0/InventoryManagement.DAL.genruntimeconfig.cache
