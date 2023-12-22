@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L8zspvY4RUk31vmzWFWGCWQtVuYqihteQeKpwUkM6UK56SuQ7OXrH3LkpjucKQ3dOYQLsOD8jvsk3LjRbMlyiA==",
+  "dgSpecHash": "ZCoT3zxc6FIFiIEON5zy/8R22YhiXTLpPLs28m9wbnZgmgviaToldIdjK0+aWP7Mk5X/5Ruw2/TjaoXfSuQVIg==",
   "success": true,
   "projectFilePath": "/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.BLL/InventoryManagement.BLL.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/home/liubazamula/.nuget/packages/microsoft.entityframeworkcore/8.0.0/microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "/home/liubazamula/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.0/microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
     "/home/liubazamula/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.0/microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",
+    "/home/liubazamula/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.0/microsoft.entityframeworkcore.inmemory.8.0.0.nupkg.sha512",
     "/home/liubazamula/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.0/microsoft.entityframeworkcore.relational.8.0.0.nupkg.sha512",
     "/home/liubazamula/.nuget/packages/microsoft.entityframeworkcore.sqlserver/8.0.0/microsoft.entityframeworkcore.sqlserver.8.0.0.nupkg.sha512",
     "/home/liubazamula/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",

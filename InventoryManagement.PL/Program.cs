@@ -8,18 +8,12 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var builder = new ConfigurationBuilder()
-            .AddInMemoryCollection(new Dictionary<string, string>
-                {
-                    {"ConnectionStrings:InventoryDBConnectionString", "Server=InventoryManagementServer;Database=InventoryManagementDB;User Id=256;Password=hello;"}
-                })
-            .Build();
+
         // Set up Dependency Injection
         var services = new ServiceCollection();
-        ConfigureServices(services, builder);
-        services.AddSingleton<IConfiguration>(builder);
+        ConfigureServices(services);
         services.AddDbContext<InventoryContext>(options =>
-            options.UseSqlServer(builder.GetConnectionString("InventoryDBConnectionString")));
+            options.UseInMemoryDatabase("InventoryDatabase"));
         var serviceProvider = services.BuildServiceProvider();
 
         // Run the application
@@ -27,7 +21,7 @@ public class Program
         app.Run();
     }
 
-    private static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
+    private static void ConfigureServices(IServiceCollection services)
     {
         // Register your services, repositories, and context here
         services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -38,7 +32,7 @@ public class Program
 
         // Add the DbContext configuration
         services.AddDbContext<InventoryContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("InventoryDBConnectionString")));
+            options.UseInMemoryDatabase("InventoryDatabase"));
 
         // ... Add other services and interfaces as needed
     }

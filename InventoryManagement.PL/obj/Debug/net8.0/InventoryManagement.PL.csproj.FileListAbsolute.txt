@@ -72,3 +72,5 @@
 /home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.PL/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Physical.dll
 /home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.PL/bin/Debug/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll
 /home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.PL/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.PL/obj/Debug/net8.0/InventoryManagement.PL.sourcelink.json
+/home/liubazamula/projects/5.dotnet/lab3/InventoryManagement.PL/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
