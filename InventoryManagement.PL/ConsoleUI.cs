@@ -6,7 +6,6 @@ public class ConsoleUI
     {
         Console.WriteLine("1: List all products");
         Console.WriteLine("2: Add a product");
-        // More menu options
         Console.WriteLine("Type 'exit' to close the application.");
     }
 
@@ -23,7 +22,6 @@ public class ConsoleUI
         }
     }
 
-    // Methods for other UI interactions
     public Product  CaptureProductInfo()
     {
         Console.WriteLine("Enter product name:");
@@ -38,7 +36,6 @@ public class ConsoleUI
             Console.WriteLine("Invalid input for price. Please enter a valid decimal number:");
         }
 
-        // Тут можна додати логіку для зчитування додаткових полів продукту, якщо потрібно
 
         return new Product { Name = name, Price = price };
     }

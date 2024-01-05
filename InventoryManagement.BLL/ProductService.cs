@@ -1,4 +1,3 @@
-// BLL/ProductService.cs
 using InventoryManagement.DAL;
 using System.Collections.Generic;
 
@@ -31,11 +30,9 @@ namespace InventoryManagement.BLL
 
         public void UpdateProduct(Product product)
         {
-            // BLL logic to update a product
             var existingProduct = _unitOfWork.Products.GetById(product.ProductId);
             if (existingProduct != null)
             {
-                // Оновлення властивостей
                 _unitOfWork.Complete();
             }
         }

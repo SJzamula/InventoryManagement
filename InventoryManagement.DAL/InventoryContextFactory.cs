@@ -7,7 +7,7 @@ public class InventoryContextFactory : IDesignTimeDbContextFactory<InventoryCont
     public InventoryContext CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<InventoryContext>();
-        optionsBuilder.UseSqlServer("InventoryDBConnectionString");
+        optionsBuilder.UseInMemoryDatabase("InventoryDatabase");
 
         return new InventoryContext(optionsBuilder.Options);
     }

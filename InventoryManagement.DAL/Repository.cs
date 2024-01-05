@@ -32,5 +32,4 @@ public class Repository<T> : IRepository<T> where T : class
         entities.Remove(entity);
     }
 
-    // ... Implement additional methods as needed
 }

@@ -23,7 +23,6 @@ namespace InventoryManagement.DAL
 
         public int Complete()
         {
-            // Save changes across all repositories
             return _context.SaveChanges();
         }
 
@@ -31,7 +30,5 @@ namespace InventoryManagement.DAL
         {
             _context.Dispose();
         }
-
-        // ... Implement additional repository properties
     }
 }

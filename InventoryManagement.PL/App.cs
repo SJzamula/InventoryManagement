@@ -22,10 +22,6 @@ public class App
         bool exit = false;
         while (!exit)
         {
-            // Display options to the user
-            // Handle user input
-            // Call the necessary BLL methods
-            // Example:
             _consoleUI.DisplayMenu();
             var input = _consoleUI.GetUserInput();
             switch (input)
@@ -35,7 +31,6 @@ public class App
                     _consoleUI.DisplayProducts(products);
                     break;
                 case "2":
-                    // Додати новий продукт
                     try
                     {
                         var newProduct = _consoleUI.CaptureProductInfo();

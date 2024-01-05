@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using InventoryManagement.DAL; // Namespace for DAL
-using InventoryManagement.BLL; // Namespace for BLL
+using InventoryManagement.DAL;
+using InventoryManagement.BLL;
 
 public static class BLLDependencyResolver
 {
@@ -10,14 +10,12 @@ public static class BLLDependencyResolver
         // DAL dependencies
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-        
+
         // DbContext configuration
-        services.AddDbContext<InventoryContext>(options => 
-            options.UseSqlServer("InventoryDBConnectionString"));
-        
+        services.AddDbContext<InventoryContext>(options =>
+            options.UseInMemoryDatabase("InventoryDatabase"));
+
         // BLL dependencies
         services.AddScoped<IProductService, ProductService>();
-
-        // ... Add other services and interfaces as needed
     }
 }

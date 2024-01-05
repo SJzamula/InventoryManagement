@@ -1,4 +1,3 @@
-// BLL/IProductService.cs
 using InventoryManagement.DAL;
 
 namespace InventoryManagement.BLL
