@@ -1,6 +1,7 @@
 using System.Globalization;
 using InventoryManagement.BLL;
 using InventoryManagement.DAL;
+
 public class ConsoleUI
 {
     public void DisplayMenu()

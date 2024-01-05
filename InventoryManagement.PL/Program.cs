@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using InventoryManagement.BLL; // Namespace for BLL
 using InventoryManagement.DAL;
-using Microsoft.Extensions.Configuration;
 
 public class Program
 {
