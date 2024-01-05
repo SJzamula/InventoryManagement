@@ -24,6 +24,8 @@ public class Program
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         services.AddScoped<IProductService, ProductService>();
+        services.AddScoped<IOrderService, OrderService>();
+        services.AddSingleton<ICurrentOrderService, CurrentOrderService>();
         services.AddScoped<ConsoleUI>();
         services.AddScoped<App>();
 

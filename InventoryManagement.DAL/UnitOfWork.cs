@@ -4,6 +4,8 @@ namespace InventoryManagement.DAL
     {
         private readonly InventoryContext _context;
         private IRepository<Product> _products;
+        private IRepository<Order> _orders;
+        private IRepository<PurchaseQueueItem> _purchaseQueue;
 
         public UnitOfWork(InventoryContext context)
         {
@@ -14,10 +16,23 @@ namespace InventoryManagement.DAL
         {
             get
             {
-                if (_products == null)
-                    _products = new Repository<Product>(_context);
+                return _products ?? (_products = new Repository<Product>(_context));
+            }
+        }
 
-                return _products;
+        public IRepository<Order> Orders
+        {
+            get
+            {
+                return _orders ?? (_orders = new Repository<Order>(_context));
+            }
+        }
+
+        public IRepository<PurchaseQueueItem> PurchaseQueue
+        {
+            get
+            {
+                return _purchaseQueue ?? (_purchaseQueue = new Repository<PurchaseQueueItem>(_context));
             }
         }
 

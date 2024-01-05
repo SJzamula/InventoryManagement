@@ -10,6 +10,9 @@ namespace InventoryManagement.DAL
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<PurchaseQueueItem> PurchaseQueue { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -17,8 +20,13 @@ namespace InventoryManagement.DAL
 
             modelBuilder.Entity<Product>(entity =>
             {
-                entity.Property(e => e.Price).HasPrecision(18, 2); // Example precision and scale
+                entity.Property(e => e.Price).HasPrecision(18, 2);
             });
+
+            modelBuilder.Entity<Order>()
+                .HasMany(o => o.OrderItems)
+                .WithOne(oi => oi.Order)
+                .HasForeignKey(oi => oi.OrderId);
         }
     }
 }
