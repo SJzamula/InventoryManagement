@@ -75,7 +75,6 @@ namespace InventoryManagement.BLL
                     ProductId = productId,
                     Quantity = quantity,
                     OrderId = orderId
-                    // Встановіть інші необхідні властивості
                 };
 
                 _unitOfWork.PurchaseQueue.Add(purchaseQueueItem);
@@ -110,7 +109,6 @@ namespace InventoryManagement.BLL
                     }
                     if (product.IsInStorage)
                     {
-                        // if user ordered more product quantity than avaible, save diffrence in queue
                         if (orderItem.Quantity > product.Quantity)
                         {
                             int missedProductQuantity = orderItem.Quantity - product.Quantity;
@@ -125,12 +123,10 @@ namespace InventoryManagement.BLL
                     }
                     else
                     {
-                        // Якщо товар відсутній, додайте його до черги придбання
                         AddToPurchaseQueue(orderItem.ProductId, orderItem.Quantity, orderId);
                     }
                 }
 
-                // Оновіть стан замовлення
                 order.Status = OrderStatus.Processed;
                 _unitOfWork.Complete();
             }

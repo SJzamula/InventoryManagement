@@ -13,7 +13,6 @@ public class ConsoleUI
         Console.WriteLine("5: Create new order");
         Console.WriteLine("6: Process order");
         Console.WriteLine("7: List purchase queue");
-        // More menu options
         Console.WriteLine("Type 'exit' to close the application.");
     }
 
